@@ -5,7 +5,6 @@ from sklearn.datasets import make_classification
 
 app = Flask(__name__)
 
-
 X, y = make_classification(n_samples=100, n_features=5, random_state=42)
 model = MLPClassifier(hidden_layer_sizes=(10, 5), max_iter=1000, random_state=42)
 model.fit(X, y)

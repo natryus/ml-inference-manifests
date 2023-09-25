@@ -10,7 +10,6 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-
 model = joblib.load("mlp_20_10.joblib")
 
 def data_acquisition():
